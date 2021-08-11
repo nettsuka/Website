@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kotta+One&display=swap');
+
+
+.game_container{
+  display: inline-block;
+  background-color: antiquewhite;
+  box-shadow: 5px 5px #8a795d;
+  height: auto;
+  text-align:center;
+}
+
+.itch_container{
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  max-height: 560px;
+  padding-bottom: 56.25%; 
+}
+
+.itch_container2{
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  max-height: 808px;
+  padding-bottom: 56.25%; 
+}
+
+/* IMAGES */
+
+.game_image{
+  max-width: 400px;
+  height: auto;
+}
+
+.imeg{
+  position: relative;
+  width: 100px;
+  height: 100%;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  font-size: 24px;
+}
+
+
+
+.wrapper{
+  background-color: whitesmoke;
+  position: absolute;
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.showcase{
+  display: inline-block;
+  text-align:center;
+}
+
+
+#g{
+  color: darkorange;
+  font-family: 'Kotta One', serif;
+  font-size-adjust: 1.40;
+  font-weight: bold;
+}
+
+#gc{
+  color: orange;
+  font-family: 'Kotta One', serif;
+  font-size-adjust: .70;
+}
+
+#carousel-case{
+  display: inline-block;
+  text-align: center;
+  max-width: 60%;
+}
+
+#carousel-main{
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.carousel-sub{
+  max-width: 24%;
+  height:auto;
+  opacity: 0.5;
+}
