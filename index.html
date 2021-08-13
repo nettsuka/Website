@@ -27,15 +27,15 @@ Personal Proffesional Website
   
   <body style = "background-color: rgba(200,164,109,0.4);">
     <!-- landing page -->
-    <section class="landing-page">
+    <section class="landing-page" id ="home">
       <div id="lp-content">
-        <h1> 
+        <h1 style= "text-shadow: 2px 2px #000000;"> 
           Jonathan Chhou
-          
-          <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Jona", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
-          </a>
+          <p style= "font-size: 25%; opacity: 80%;"> Tailor creations for you and your surroundings </p>
+          <!-- <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Jona", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+          </a> -->
         </h1>
-
+<!-- 
         <div class="btn-container">
           <div class="row">
             <div class="col-sm">
@@ -49,7 +49,7 @@ Personal Proffesional Website
             </div>
           </div>
         </div>
-        
+        -->
       </div>
       
     </section>
@@ -59,12 +59,13 @@ Personal Proffesional Website
       
      <div class = "row mr-md-5">
         <div class = "col-1 sticky" style = " background-color: white;">
-          <img href = "" src="img/Repa.jpg">
+          <img href = "" src="img/NettsuName.png">
           <nav>
-            <a class="menu" href = "">Home</a>
-            <a class="menu" href = "">Resume</a>
-            <a class="menu" href = "">Game Dev</a>
-            <a class="menu" href = "">Software/Tools Development</a>
+            <a class="menu" href = "#home">Home</a>
+            <a class="menu" href = "#about">About</a>
+            <a class="menu" href = "#experience">Experience</a>
+            <a class="menu" href = "#software">Software/Tools Development</a>
+            <a class="menu" href = "#game">Game Dev</a>
           </nav>
         </div>
        
@@ -72,52 +73,68 @@ Personal Proffesional Website
         <div class = "col mx-md-6" style= "margin-left:5%; margin-right:5%;background:">
           
           <!-- About Section -->
-          About
-          <div class = "border-shadow">
+          <p id="about" style= "padding-top: 2%;text-align: center;font-size: 200%">About</p>
+          <div class = "border-shadow" id="about">
               <img src="img/prof.jpg" style="width: 20%; display: inline-block;border-radius: 8px; border: 1px solid #ddd; padding: 5px">
           </div>
           
           <!-- Education Section -->
-          <div style="margin-top: 10%;text-align: center;padding-bottom: 5%;padding-right: 2%"  class = "border-shadow">
-            Education
+          <div style="margin-top: 10%;text-align: center;padding-bottom: 6%;padding-right: 2%"  class = "border-shadow" id = "experience">
+            <p style= "text-align: center;font-size: 200%">Education and Experience<p>
             <img src="img/uci.png" style="float:left;max-width: 150px; width: 15%; max-height: 150px; height: 15%">
             <p style="text-align: left;">
-              University of California, Irvine <span style="float:right">2017-2021</span>
+              <b>University of California, Irvine</b> <span style="float:right">2017-2021</span>
               <br>B.S. Information and Computer Science - Informatics
             </p>
+            <div style="margin-top: 10%;text-align: center;">
+            <img src="img/avatar.png" style="float:left;max-width: 150px; width: 15%; max-height: 150px; height: 15%">
+              <p style="text-align: left;">
+              <b>Avatar Partner, Inc.</b> <span style="float:right;padding-left: 10%">2020-2021</span>
+              <br> Software Engineer Intern <br>
+              
+              </p>
+            </div>
 
           </div>
+          
                       
           <!-- Software Section -->
-          software/tools
-          <div class = "panel">
-              <img src="img/stacked.png" style="width: 100%;max-width: 700px; display: inline-block;border-radius: 8px; border: 1px solid #ddd; padding: 5px">
-            <p>THIS IS A FILLER</p>
+          <p id="software" style= "padding-top: 2%;text-align: center;font-size: 200%">Software and Tools<p>
+          <div style="height:600px" >
+            <div class = "panel" style="float:left;">
+                <img src="img/stacked.png" style="width: 100%;max-width: 700px; max-height: 400px;display: inline-block;border-radius: 8px; border: 1px solid #ddd; padding: 5px">
+                <p style="text-align: center;font-weight: bold;">Stacked Deck</p>
+                <p>Software developed in Unity(C#) for the Riot Games's Legends of Runeterra Developer Challenge 2019. The Developer challenge goal is to make a software tool for their game Legends of Runeterra. Stacked Deck combined random card under the constraints to make a deck. This tool allowed player more randomness to their gameplay and fun, while allowing them to save and import the deck through MongoDB and the game's api.</p>
+            </div>
+            <div class = "panel" style="float:right;">
+                <img src="img/onethread.png" style="width: 100%;max-width: 700px;max-height: 400px; display: inline-block;border-radius: 8px; border: 1px solid #ddd; padding: 5px">
+                <p style="text-align: center;font-weight: bold;">One Thread</p>
+                <p>A simple android application inspired by reddit that uses a thread like messanger board. The software utilizes Google Firebase to store data from users and their post to authenticate and display correct information in the app.</p>
+            </div>
           </div>
-            
           <!-- Game Project Section -->
-          <div style="margin-top: 10%;text-align: center;"  class = "border-shadow">
-              Game Projects
-            <br>
+          
+          <div style="text-align: center;"  class = "border-shadow" id = "game">
+            <p style= "text-align: center;font-size: 200%">Game Projects<p>
               <section id="carousel-case">
-                  <a style= "height: 200px;" id="carousel-main" class="carousel" data-rate="2000" data-type='[ "https://img.itch.zone/aW1nLzI1Njg1NjYucG5n/315x250%23c/8jh9Yy.png", "https://img.itch.zone/aW1nLzI5NDY5ODYucG5n/315x250%23c/UtmhxN.png", "https://img.itch.zone/aW1nLzI4MDg3NzQucG5n/315x250%23c/Y6efrw.png","https://img.itch.zone/aW1nLzI2MjMyNTcucG5n/315x250%23c/Jt0Sju.png"]'>
+                  <a style= "height: 200px;" id="carousel-main" class="carousel" data-rate="2000" data-type='[ "https://img.itch.zone/aW1nLzI1Njg1NjYucG5n/315x250%23c/8jh9Yy.png", "https://img.itch.zone/aW1nLzI5NDY5ODYucG5n/315x250%23c/UtmhxN.png", "https://img.itch.zone/aW1nLzI4MDg3NzQucG5n/315x250%23c/Y6efrw.png","https://img.itch.zone/aW1nLzI2MjMyNTcucG5n/315x250%23c/Jt0Sju.png"]' href-type='[ "https://eggshelly.itch.io/senpai-dont-notice-me", "https://nettsuka.itch.io/bloockbooster", "https://lunagames.itch.io/elf-off-the-shelf","https://spherous.itch.io/halloween-ballerina"]'>
                   </a>
                   <div style= "display: inline-block" class ="carousel-sub">
-                    <a href = "game1.html">
+                    <a href = "https://eggshelly.itch.io/senpai-dont-notice-me">
                     <img src = "https://img.itch.zone/aW1nLzI1Njg1NjYucG5n/315x250%23c/8jh9Yy.png" alt ="Game Jam">
                       </a>
                   </div>
                   <div style= "display: inline-flex" class ="carousel-sub">
-                    <a href = "game2.html">
+                    <a href = "https://nettsuka.itch.io/bloockbooster">
                     <img src = "https://img.itch.zone/aW1nLzI5NDY5ODYucG5n/315x250%23c/UtmhxN.png" alt="Game Jam" >
                     </a>
                   </div>
                   <div style= "display: inline-flex" class ="carousel-sub">
-                    <a href = "game3.html">
+                    <a href = "https://lunagames.itch.io/elf-off-the-shelf">
                     <img src = "https://img.itch.zone/aW1nLzI4MDg3NzQucG5n/315x250%23c/Y6efrw.png" alt="Game Jam"></a>
                   </div>
                   <div style= "display: inline-flex" class ="carousel-sub">
-                    <a href = "game4.html">
+                    <a href = "https://spherous.itch.io/halloween-ballerina">
                     <img src = "https://img.itch.zone/aW1nLzI2MjMyNTcucG5n/315x250%23c/Jt0Sju.png" alt="Game Jam"></a>
                   </div>
               </section>
@@ -138,6 +155,15 @@ Personal Proffesional Website
       
     </section>
     
+    <!-- footer -->
+    <section style="background: rgba(0,0,0,0.6);height: 240px; margin-top: 5%">
+        <div style= "float:right;margin-right: 20%; margin-top: 20px;margin-bottom: 20px;">
+            <b style="color:white">Contact/Media</b>
+            <a href = ""><img src = "img/gmail.png" style="max-width: 50px"></a>
+            <a href = ""><img src = "img/linkedin.webp"style="max-width: 50px"></a>
+            <a href = ""><img src = "img/twitch.webp"style="max-width: 50px"></a>
+        </div>
+    </section>
     
     
     
