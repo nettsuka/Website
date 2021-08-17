@@ -117,6 +117,7 @@ h1 span {
 .border-shadow{
   background-color: rgba(0,0,0,0.16);
   box-shadow: 0 3px 6px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.2);
+  overflow: auto;
 }
 
 footer
