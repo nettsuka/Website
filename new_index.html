@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+Personal Proffesional Website
+-->
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jonathan Chhou">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- javas script and css sheet here, also what other css sheets do i want to use? -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/new_styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  
+  <body style = "background-color: black;background: rgba(20,20,20,1);">
+    <!-- sticky top toolbar -->
+    <section class="toolbar">
+      <div>
+        <img href = "" src="img/NettsuName.png" style = "height:8vh;">
+        <div class="btn-group" style= "float:right;">
+            <img src= "img/menu.png" style="width: 8vh">
+        </div>
+      </div>
+    </section>
+    <!-- landing page -->
+    <section class="landing-page" id ="home" style = "background-color: white;" >
+      <div style="position: absolute; z-index: 1;">
+        <video id="background-video" autoplay loop muted>
+          <source src="C:/Users/Nettsuka/Downloads/geometricks-shapes.mp4" type="video/mp4"></video>
+      </div>
+      <div id="lp-content" style=" z-index: 2;">
+        <h1 style= "position: absolute;2px #000000;color: white; float:left;left:15%;"> 
+          <p>Jonathan Chhou</p>
+        </h1>
+        <h2>
+          <p style= "position: absolute;color: white;font-size: 50%; opacity: 80%; z-index: 2;float:right;right:15%;"> Tailor creations for you and your surroundings </p>
+        </h2>
+      </div>
+    </section>
+    <!-- page contents -->
+    <section id="content" class = "column" style = "color: green;font-size: 200%">
+      <!-- about contents -->
+      <div>
+        <h2 class = "margin-top">&lt;about&gt;</h2>
+          <img src="img/trans_prof.png" style="width: 30%; display: inline-block; padding: 5px; float:right;">
+          <div class = "about-div">
+            <p> " If nothing satisfies you, create something that does "</p> 
+            <p>Thriving passion for technology and using it to benefit people. I tend to like to learn relavent or unknown technology to implement in my life. Mainly, I am interested in mixed reality technology. Though, I study other fields of technology like data-science, web-development, Search Engine Optimization to make applications.</p>
+            <p style = "font-size: 75%;"> My hobbies tend to go to games and developing them. My interest in the whole consumers and developers duality puts me curious by actively being on both sides. One of the few place for this duality is the streaming site twitch where I schedulely stream.  </p>
+            <div style = "margin-top: 10%"></div>
+            <div style = "border:1px solid green;padding-right: 100%;padding-top: 2%;padding-bottom: 2%;padding-left: 3%"> <img src="img/pdf.png" style = "width:3vh;float:left;top:4vh">&nbsp;&nbsp;Resume</div>
+          </div>
+        <h2 class = "margin-bot">&lt;/about&gt;</h2>
+      </div>
+      
+      <!-- Education Section -->
+      <div>
+      <h2 class = "margin-top">&lt;experience&gt;</h2>
+      <div class = "contain" style="margin-top: 10%;text-align: center;padding-bottom: 6%;padding-right: 2%"  id = "experience">
+        <img src="img/uci.png" style="float:left;max-width: 150px; width: 15%; max-height: 150px; height: 15%">
+        <p style="text-align: left;">
+          <b>University of California, Irvine</b> <span style="float:right">2017-2021</span>
+          <br>B.S. Information and Computer Science - Informatics
+        </p>
+        <div style="margin-top: 10%;text-align: center;">
+        <img src="img/avatar.png" style="float:left;max-width: 150px; width: 15%; max-height: 150px; height: 15%">
+          <p style="text-align: left;">
+          <b>Avatar Partner, Inc.</b> <span style="float:right;padding-left: 10%">2020-2021</span>
+          <br> Software Engineer Intern <br>
+
+          </p>
+        </div>
+      </div>
+      <h2 class = "margin-bot">&lt;/experience&gt;</h2>  
+      </div>
+      
+      <!-- Projects Section -->
+      <div>
+        <h2 class = "margin-top">&lt;project&gt;</h2>
+        <div class = "contain">
+          <div class = "project">
+            <p> Stacked Deck </p>
+            <p> Legends of Runeterra Developer Challenge 2019 that randomizes cards into a stack of 40 cards.</p>
+            <p>&lt;Details...&gt;</p>
+          </div>
+          <div class = "project">
+            <p> OpenGL Modeling Program </p>
+            <p>A vector modeling program developed in C++ that creates quad shapes on a 3d grid using OpenGL libraries such as GLEW and GLFW</p>
+            <p>&lt;Details...&gt;</p>
+          </div>
+          <div class = "project">
+            <p> One Thread </p>
+            <p> Reddit-like social android application that only have one thread a day. </p>
+            <p>&lt;Details...&gt;</p>
+          </div>
+        </div>
+        <h2 class = "margin-bot">&lt;/project&gt;</h2>  
+      </div>
+      
+      
+      <!-- Contact Section -->
+      <div>
+        <h2 class = "margin-top">&lt;contact&gt;</h2>
+          <form class="cf" action="https://formsubmit.co/jonathanchhou@outlook.com"
+          method="POST">
+            <div class="cf">
+              <input type="text" id="input-name" name="name" placeholder="Name" required>
+              <input type="email" id="input-email" placeholder="Email address">
+              <input type="text" id="input-subject" name = "_subject" placeholder="Subject">
+            </div>
+            <div class="cf">
+              <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+            </div>
+            <input type="submit" value="Submit" id="input-submit">
+          </form>
+        <h2 class = "margin-bot">&lt;/contact&gt;</h2>
+      </div>
+      
+    </section>
+  </body>
+  
+</html>
